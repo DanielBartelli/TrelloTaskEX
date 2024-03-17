@@ -3,7 +3,10 @@ html, body {
     padding: 0;
     height: 0;
 }
-
+a {   
+    color: inherit;
+    text-decoration: none;
+}
 .grid-conteiner {
     display: grid;
     height: 100vh;
