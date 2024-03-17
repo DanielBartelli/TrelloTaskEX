@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/login-style.css" type="text/css">
+</head>
+<body>
+    <div class="grid-conteiner">
+        <div class="col1">
+            <span class="title">Welcome</span>
+            <p class="p1">Sign In to Cosmo view  </p>
+        </div>
+        <div class="col2">
+            
+            <span class="subtitle text-muted mt-6">Let's signing you in</span>
+
+            <form id="form-login" class="mt-14" onsubmit="login(event)">
+                <input id="inputEmail" name="email" required type="email" placeholder="Email address">
+                <input id="inputSenha" name="password" required type="password" placeholder="Password">
+                <span>Forgot password?</span>
+                <button type="submit">Log in</button>
+            </form>
+            <label class="mt-14 text-muted">Or login if</label>
+            <div class="row mt-6">
+                <label for="">Google</label>
+                <label for="">Apple</label>
+            </div>
+            <span class="dont-account"> Don't have account? <b>sing up</b></span>
+        </div>
+    </div>
+
+    <script>
+        function login(e) {
+            e.preventDefault()
+            const email = document.getElementById('inputEmail').value;
+            const password = document.getElementById('inputSenha').value;
+            const data = [
+                {
+                    id: 1,
+                    email: 'danielbartelli@gmail.com',
+                    senha: '12345678'
+                }
+            ]
+            const result = data.find(item => item.email === email 
+                                            && item.senha === password)   
+            if (!result) {
+                alert('Email e/ou senha incorretos.')
+            } else {
+                alert('Bem vindo a sua conta')
+            }
+        }
+        
+    </script>
+</body>
+</html>
