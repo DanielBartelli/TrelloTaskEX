@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+form label {
+    font-size: 18px;
+}
+
+form input {
+    border: 1.75px solid #ececec;
+    padding-left: 12px;
+}
+
+form input, form button {
+    border-radius: 6px;
+    height: 36px;
+
+}
+
+form button {
+    background-color: #1b1b1b;
+    color: white;
+    height: 36px;
+    width: 120px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form p {
+    justify-content: center;
+}
+
+.mt-6{
+    margin-top: 6px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    background-color: #e6e6e6;
+}
+
+.mt-14 {
+    margin-top: 14px;
+}
